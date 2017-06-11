@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do List Application</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.structure.css">
+  <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.theme.css">
+</head>
+
+<body>
+        <div id="container">
+                  <h2>To Do List</h2>
+                  <button id="btnAddProject">Add Project</button>
+                  <div id="projects">
+                        <ul id="main">
+                                  <li><a href="#personal">Personal</a></li>
+                                  <li><a href="#work">Work</a></li>
+                        </ul>
+                        <ol id="personal">
+                                <li><input type="checkbox">Doctor appointment</li>
+                                <li><input type="checkbox">Call the plumber</li>
+                        </ol>
+
+                        <ol id="work">
+                                <li><input type="checkbox">Complete website</li>
+                                <li><input type="checkbox">Meet project manager</li>
+                                <li><input type="checkbox">Make a To Do List</li>
+                        </ol>
+              </div>
+              <div id="project-dialog" title="Add a project" style="display: none;">
+                      <label for="new-project">Project name:</label><input id="new-project" type="text" />
+              </div>
+      </div>
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
